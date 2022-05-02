@@ -5,7 +5,6 @@ function App() {
   return (
     <div className="App">
       <Search />
-      {'in the app js'}
     </div>
   );
 }
