@@ -5,7 +5,7 @@ import SearchBar from './Components/Search/SearchBar';
 
 
 class App extends React.Component{
-  
+// here we are getting the picture from the unsplash site using their API
  async onSearchSubmit(term){
    const response = await axios.get('https://api.unsplash.com/search/photos', {
         params: {query: term},
