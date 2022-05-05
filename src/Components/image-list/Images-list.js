@@ -15,7 +15,7 @@ const ImageList = props => {
 });
 
   return(
-    <div className='image-list'> Image List {images} </div>
+    <div className='image-list'>{images} </div>
   )
 }
 

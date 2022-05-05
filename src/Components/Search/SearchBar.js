@@ -15,17 +15,16 @@ onFormSubmit = event => {
 
   render(){
     return (
-     <div className='ui segment'> 
-       <form onSubmit={this.onFormSubmit} className='ui form'>
-            <div className='field'>
-            <label>Image search</label>   
-              <input type="text"
+     <div className='searchIcon'> 
+       <form onSubmit={this.onFormSubmit} className=''>
+            <div className='searchBar'>  
+              <input className='form-control text-space' type="text" placeholder='search image'
                 value={this.state.term}
                 // controlled component here we are storing the input value in react not in the Dom. e' represent the event and we assign that event to the state 'term' that assignd the value to the input in react  
                 onChange={e => this.setState({term: e.target.value})}
                />
             </div>
-            <button type="Submit">Submit</button>
+            <button className='btn btn-outline-info mt-2' type="Submit">Submit</button>
           </form>
         </div>
     )

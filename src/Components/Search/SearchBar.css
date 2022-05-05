@@ -1,0 +1,9 @@
+.searchIcon{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.searchBar{
+  margin-top: 100px;
+}
